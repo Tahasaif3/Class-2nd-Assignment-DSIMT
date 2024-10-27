@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        .container {
+            padding: 20px;
+            border: 2px solid #ccc;
+            margin-bottom: 20px; /* Add margin to create space below the container */
+        }
+        form {
+            display: grid;
+        }
+        label {
+            display: block; /* Change to block for left alignment */
+            margin-bottom: 5px; /* Add space below labels */
+            text-align: left; /* Left-align text */
+        }
+        input[type="text"], input[type="tel"], input[type="email"],
+        input[type="datetime-local"], input[type="datetime"], 
+        input[type="date"], input[type="time"], input[type="month"], 
+        input[type="week"] {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            grid-column: 2;
+            width: max-content;
+            justify-self: start;
+        }
+        .contact-details {
+            text-align: center; /* Center the contact details */
+            margin-top: 20px; /* Add some spacing above the contact details */
+        }
+    </style>
+</head>
+<body>
+    <h1>Contact Details</h1>
+    <div class="container">
+        <p>Please enter your personal details:</p>
+        <form action="#" method="get">
+            <div>
+                <label for="firstname">First name:</label>
+                <input type="text" id="firstname" name="firstname" placeholder="Enter your first name here:" required>
+            </div>
+            <div>
+                <label for="lastname">Last name:</label>
+                <input type="text" id="lastname" name="lastname" placeholder="Enter your last name here">
+            </div>
+            <div>
+                <label for="street">Street address:</label>
+                <input type="text" id="street" name="street" placeholder="Enter your street address here:">
+            </div>
+            <div>
+                <label for="city">Town/City:</label>
+                <input type="text" id="city" name="city" placeholder="Enter your Town/City name here:" required>
+            </div>
+            <div>
+                <label for="postcode">Post code:</label>
+                <input type="text" id="postcode" name="postcode" placeholder="Enter your Town/City Post code here:" required>
+            </div>
+            <div>
+                <label for="telephone">Telephone:</label>
+                <input type="tel" id="telephone" name="telephone" placeholder="Enter your Telephone number here:" required>
+            </div>
+            <div>
+                <label for="mobile">Mobile:</label>
+                <input type="tel" id="mobile" name="mobile" placeholder="Enter your mobile number here:" required>
+            </div>
+            <div>
+                <label for="email">Email address:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email address here:" required>
+            </div>
+            <div>
+                <label for="datetime-local">Date/Time (Local):</label>
+                <input type="datetime-local" id="datetime-local" name="datetime-local">
+            </div>
+            <div>
+                <label for="datetime">Date/Time (Global):</label>
+                <input type="datetime" id="datetime" name="datetime">
+            </div>
+            <div>
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date">
+            </div>
+            <div>
+                <label for="time">Time:</label>
+                <input type="time" id="time" name="time">
+            </div>
+            <div>
+                <label for="month">Month:</label>
+                <input type="month" id="month" name="month">
+            </div>
+            <div>
+                <label for="week">Week:</label>
+                <input type="week" id="week" name="week">
+            </div>
+            <div>&nbsp;</div>
+            <div style="text-align: center;">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
